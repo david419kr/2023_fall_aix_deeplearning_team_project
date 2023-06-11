@@ -27,7 +27,7 @@ def get_parser():
                         help='default(cuda)')
     
     #dataloader
-    parser.add_argument('--data', default='D:\\aix\\final\\images', type=str, metavar='PATH',
+    parser.add_argument('--data', default='/home/tnt/Downloads/NIH_images',
                         help='Data root ')
     parser.add_argument('--batch_size', default=5, type=int,
                         help='batch size per gpu')
@@ -56,7 +56,7 @@ def get_parser():
 # %%
 def main(args):
 
-    device = torch.device(args.device)
+    device = torch.device("cuda:0" if torch.cuda.is_available else "cpu")
 
     #Dataset
     train_transform = transforms.Compose([
@@ -98,6 +98,8 @@ def main(args):
         total_loss = 0
         for i, (x, y) in enumerate(train_loader):
             x, y = x.to(device), y.to(device)
+            x = torch.reshape(x, (5, 1, 512, 512)).float()
+            y = torch.reshape(y, (5, 1, 512, 512)).float()
             logit = model(x)
             loss = criterion(logit, y)
             
@@ -112,8 +114,6 @@ def main(args):
             total_loss += loss * args.batch_size 
         total_loss /= len(train_dataset)
         print(f"avg per epoch loss: {total_loss:.3f}")
-    torch.save(model, 'model.pt')
-    torch.save(model.state_dict(), 'model_state_dict.pt')
     print("Done!")
             
 if __name__ == '__main__':

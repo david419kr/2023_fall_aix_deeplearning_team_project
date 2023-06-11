@@ -14,7 +14,7 @@ import torchvision
 
 class Pretrain_Dataset(data.Dataset):
     NUM_CLASS = 2
-    def __init__(self, root='/nasdata3/9kth/SSL/data/BraTS_2020/BraTS2020_training_data/content/data', split='train', transform=None, args=None):
+    def __init__(self, root='/home/tnt/Downloads/NIH_images', split='train', transform=None, args=None):
         self.root = root
         self.img_names_list = self._get_names()
         
@@ -42,8 +42,9 @@ class Pretrain_Dataset(data.Dataset):
     
     def _img_transform(self, img):
         #img = np.ascontiguousarray(img.transpose(2, 0, 1))
-        return torchvision.transforms.functional.to_tensor(img)
-
+        #return torchvision.transforms.functional.to_tensor(img)
+        return torch.from_numpy(img)
+    
     def __len__(self):
         return len(self.img_names_list)
 
