@@ -27,7 +27,7 @@ def get_parser():
                         help='default(cuda)')
     
     #dataloader
-    parser.add_argument('--data', default='/home/tnt/Downloads/NIH_images',
+    parser.add_argument('--data', default='../images',
                         help='Data root ')
     parser.add_argument('--batch_size', default=5, type=int,
                         help='batch size per gpu')
