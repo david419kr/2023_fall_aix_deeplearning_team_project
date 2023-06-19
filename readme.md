@@ -1,32 +1,31 @@
-# Progress - till 5/31
+This is the tech page for AI-X Deep Learning course project.
 
-Pages:
+notion: 
 
-- [x]  Proposal
-- [x]  Database (and basic setup
-- [x]  Data Analysis
-- [ ]  Write model
-- [ ]  Evaluation & Analysis
-- [ ]  Conclusion
+[AI-X Deep Learning](https://www.notion.so/AI-X-Deep-Learning-2225df669bfa4652934620e67dfdee7c?pvs=21)
 
-**Current problem on this project**
+github: https://github.com/david419kr/2023_fall_aix_deeplearning_team_project
 
-We tried to bring codes from Kaggle Challenge - to do data analysis and Image classification
+‣
 
-However, there was no update on code while database and Tensorflow/Python version updated.
+Explanation video:
 
-**Data Analysis/Classificaiton model progress**
+https://youtu.be/lEDSF-UNkh0
 
-After modifying some codes, we were able to run [Lung diseases data analysis](https://www.kaggle.com/code/sbernadac/lung-deseases-data-analysis) successfuly at our Google Colab page, [here](https://colab.research.google.com/drive/13n6HGTUlo-q-4ZVlrBiS2sBBdkyYenY6?usp=sharing). Codes were fixed as the database and csv file changed a lot.
+[Team list](https://www.notion.so/Team-list-fa46801227fc4b50897a2f0511412491?pvs=21)
 
-However, most of the model codes in Kaggle Challenge didn’t work - mostly due to TF version incompatibility, which sometimes combined with database renewal - drops error. For example, we tried to implement [Train Simple XRay CNN](https://www.kaggle.com/code/kmader/train-simple-xray-cnn), but failed as we can see at [here](https://colab.research.google.com/drive/1fin8r9jkJl-f1dSPcEmo60VCsPk540C0?usp=sharing). 
+[0520 회의록](https://www.notion.so/0520-f97b57757e874d86b882e50c29fe17cc?pvs=21)
 
-**Future plan**
+[Project Proposal](https://www.notion.so/Project-Proposal-6ea466974bee43aa8947ce246f3382af?pvs=21)
 
-For data analysis…
+[Project Proposal (국문)](https://www.notion.so/Project-Proposal-46144ed6085f4a31a311fd2e2bf6acf4?pvs=21)
 
-We will keep looking up for additional data analysis discussed in Kaggle page, run in our own Google Colab page and local computer, and make our original analysis and share our understanding
+[Database - Introduction and basic setups for Google Colaboratory](https://www.notion.so/Database-Introduction-and-basic-setups-for-Google-Colaboratory-d6503f6a0c1a4d0984fc97c7a0032922?pvs=21)
 
-For Classification model…
+[Database - 개요 및 기본 셋업](https://www.notion.so/Database-d0855bc36ad44df38945b6f6d7718d6b?pvs=21)
 
-Seek for github for many example codes of CNN, UNet, and many other machine learning model. Try to make code that works with our [NIH database](https://www.kaggle.com/datasets/nih-chest-xrays/data). We are planning to finish everything in advance so that everyone can concentrate on final exams.
+[Progress - till 5/31](https://www.notion.so/Progress-till-5-31-db1b94ec3b874bbaa1a997a60c47fcda?pvs=21)
+
+[6/9 회의](https://www.notion.so/6-9-b2baabde10c24d6b9a2d6656b644a503?pvs=21)
+
+[Kaggle Code 구현해보기](https://www.notion.so/Kaggle-Code-001b32afe48a44bd808bd497b7354177?pvs=21)
